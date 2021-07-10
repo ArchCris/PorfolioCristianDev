@@ -1,0 +1,67 @@
+.homeScreen{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $color1;
+    padding: 5vh 10vw 5vh 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mainContent{
+        height: 70%;
+        width: 80%;
+        h1{
+            color: $textA;
+            font-size: 115px;
+        }
+        .typing{
+            position: relative;
+        }
+        .typing::after{
+            content: "";
+            position: absolute;
+            height: 90%;
+            margin-left: 5px;
+            border-right: solid 3px lightgrey;
+            animation: blink 750ms infinite ease;
+        }
+        h3{
+            margin-top: 80px;
+            color: $textB;
+            font-size: 28px;
+        }
+        .cta{
+            margin-top: 80px;
+            font-size: 40px;
+            font-weight: bold;
+            height: 80px;
+            width: 350px;
+            background-color: #0E76A8;
+            text-align: center;
+            line-height: 80px;
+            cursor: pointer;
+            box-shadow: 5px 5px 0px 0px white;
+            transition: all 300ms ease;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .cta:hover{
+            transform: translatex(15px)translatey(15px);
+            box-shadow: 15px 15px 0px 0px rgba(255, 255, 255, 0.8); 
+        }
+    }
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

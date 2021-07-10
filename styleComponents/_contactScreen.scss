@@ -1,0 +1,39 @@
+.contactScreen{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $color1;
+    position: relative;
+    h1{
+        position: absolute;
+        top: 5vh;
+        left: 6vw;
+        color: $textA;
+        font-size: 115px;
+    }
+    .conteinerForm{
+        height: 100vh;
+        width: 100vw;
+        padding: 18vh 10vw 5vh 6vw;
+        form{
+            height: 100%;
+            width: 100%;
+            ul{
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items: center;
+                li{
+                    color: $textB;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }      
+            }
+        }
+    } 
+}

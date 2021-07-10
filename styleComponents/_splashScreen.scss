@@ -1,0 +1,41 @@
+.splashScreen{
+    height: 100vh;
+    width:100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(Images/concrete.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    svg{
+        height: 15vh;
+        #logo{
+            stroke-dasharray: 4200px;
+            animation: logo-animated 2s ease;
+            opacity: 100%;
+        }
+    } 
+}
+.fade{ 
+    transform: translateY(-100vh);
+    transition: all 1s ease;
+    opacity: 100%;
+}
+
+@keyframes logo-animated {
+    0%{
+        stroke-dashoffset: 4200px;
+        fill: none;
+    }
+    50%{
+        stroke-dashoffset: 0px;
+        fill: rgba(255, 255, 255, 0);  
+    }
+    100%{
+        fill: rgb(255, 255, 255);
+    }
+}
