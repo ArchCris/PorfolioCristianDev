@@ -48,7 +48,7 @@ select:-webkit-autofill {
 @import "./styleComponents/contactScreen";
 
 @media (max-width: 768px){
-    @import "./styleComponents/barraDerecha";
+    @import "./styleComponents/barraDerechaMobile";
     @import "./styleComponents/barraIzqSupMobile";
     @import "./styleComponents/homeScreenMobile";
     @import "./styleComponents/skillsScreenMobile";

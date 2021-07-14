@@ -36,7 +36,7 @@
                     align-items: center;
                     #name{
                         height: 100%;
-                        width: 76%;
+                        width: 85%;
                         font-size: 15px;
                         background-color: $color1;
                         border: none;
@@ -51,7 +51,7 @@
                     }
                     .nameCheck{
                         height: 100%;
-                        width: 4%;
+                        width: 15%;
                         position: relative;
                         display: flex;
                         justify-content: center;
@@ -78,7 +78,7 @@
                 .nameErrorConteiner{
                     height: 50%;
                     width: 80%;
-                    font-size: 30px;
+                    font-size: 15px;
                     text-align: center;   
                     color: rgb(197, 78, 78);                
                 }      
@@ -98,7 +98,7 @@
                     align-items: center;
                     #mail{
                         height: 100%;
-                        width: 76%;
+                        width: 85%;
                         font-size: 15px;
                         background-color: $color1;
                         border: none;
@@ -113,7 +113,7 @@
                     }
                     .mailCheck{
                         height: 100%;
-                        width: 4%;
+                        width: 15%;
                         position: relative;
                         display: flex;
                         justify-content: center;
@@ -143,7 +143,7 @@
                 .mailErrorConteiner{
                     height: 50%;
                     width: 80%;
-                    font-size: 30px;
+                    font-size: 15px;
                     text-align: center;   
                     color: rgb(197, 78, 78);                  
                 }      
@@ -157,8 +157,8 @@
                 align-items: center;
                 textarea{
                     height: 100%;
-                    width: 80%;
-                    font-size: 30px;
+                    width: 100%;
+                    font-size: 15px;
                     padding: 10px;
                     outline: none;
                     border: none;

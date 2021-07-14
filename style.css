@@ -959,6 +959,7 @@ select:-webkit-autofill {
     transition: all 1s ease;
     -webkit-transform-origin: center;
             transform-origin: center;
+    opacity: 0%;
   }
   .barraDerecha .logoSec svg #logo:hover {
     fill: rgba(255, 255, 255, 0.5);
@@ -1022,8 +1023,8 @@ select:-webkit-autofill {
   .barraDerecha .counterSec .counter {
     line-height: 15vh;
     text-align: center;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 800;
     color: #505050;
   }
   .barraIzqSup {
@@ -1465,7 +1466,7 @@ select:-webkit-autofill {
   }
   .contactScreen .conteinerForm .formContainer .containerName .nameSector #name {
     height: 100%;
-    width: 76%;
+    width: 85%;
     font-size: 15px;
     background-color: #1e1e1e;
     border: none;
@@ -1481,7 +1482,7 @@ select:-webkit-autofill {
   }
   .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck {
     height: 100%;
-    width: 4%;
+    width: 15%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1513,7 +1514,7 @@ select:-webkit-autofill {
   .contactScreen .conteinerForm .formContainer .containerName .nameErrorConteiner {
     height: 50%;
     width: 80%;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
     color: #c54e4e;
   }
@@ -1549,7 +1550,7 @@ select:-webkit-autofill {
   }
   .contactScreen .conteinerForm .formContainer .containerMail .mailSector #mail {
     height: 100%;
-    width: 76%;
+    width: 85%;
     font-size: 15px;
     background-color: #1e1e1e;
     border: none;
@@ -1565,7 +1566,7 @@ select:-webkit-autofill {
   }
   .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck {
     height: 100%;
-    width: 4%;
+    width: 15%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1597,7 +1598,7 @@ select:-webkit-autofill {
   .contactScreen .conteinerForm .formContainer .containerMail .mailErrorConteiner {
     height: 50%;
     width: 80%;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
     color: #c54e4e;
   }
@@ -1617,8 +1618,8 @@ select:-webkit-autofill {
   }
   .contactScreen .conteinerForm .formContainer .containerText textarea {
     height: 100%;
-    width: 80%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 15px;
     padding: 10px;
     outline: none;
     border: none;
