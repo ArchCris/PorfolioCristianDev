@@ -48,17 +48,3 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
-
-const zona1 = {
-    start: 0,
-    finish:homeScreen.clientHeight
-}
-
-
-
-const alturaPantalla = homeScreen.innerHeight
-
-window.pageYOffset
-

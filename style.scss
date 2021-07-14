@@ -19,6 +19,9 @@ $textB:grey;
 html{
     overflow-x: hidden
 }
+body{
+    overflow-x: hidden
+}
 
 /*AUTOFILL BG*/
 input:-webkit-autofill,
@@ -43,3 +46,13 @@ select:-webkit-autofill {
 @import "./styleComponents/skillsScreen";
 @import "./styleComponents/workScreen";
 @import "./styleComponents/contactScreen";
+
+@media (max-width: 768px){
+    @import "./styleComponents/barraDerecha";
+    @import "./styleComponents/barraIzqSupMobile";
+    @import "./styleComponents/homeScreenMobile";
+    @import "./styleComponents/skillsScreenMobile";
+    @import "./styleComponents/workScreenMobile";
+    @import "./styleComponents/contactScreenMobile";
+}
+

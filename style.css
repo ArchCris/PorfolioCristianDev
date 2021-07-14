@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*AUTOFILL BG*/
 input:-webkit-autofill,
 textarea:-webkit-autofill,
@@ -222,7 +226,6 @@ select:-webkit-autofill {
   height: 100vh;
   width: 4vw;
   background-color: #1e1e1e;
-  position: fixed;
   position: fixed;
   left: 0;
   top: 0;
@@ -506,6 +509,124 @@ select:-webkit-autofill {
   height: 100vh;
   width: 100vw;
   padding: 18vh 10vw 5vh 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workScreen .work .projectThumbail {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workScreen .work .projectThumbail img {
+  width: 100%;
+}
+
+.workScreen .work .projectDescription {
+  height: 100%;
+  width: 50%;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workScreen .work .projectDescription .description {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workScreen .work .projectDescription .description p {
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 25px;
+  color: #505050;
+}
+
+.workScreen .work .projectDescription .botonera {
+  height: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workScreen .work .projectDescription .botonera button {
+  width: 30%;
+  height: 100%;
+  border: solid 4px #0E76A8;
+  background-color: #282828;
+  color: #505050;
+  font-weight: bold;
+}
+
+.workScreen .work .projectDescription .botonera button:hover {
+  -webkit-box-shadow: 0px 0px 20px #0E76A8;
+          box-shadow: 0px 0px 20px #0E76A8;
+  background-color: #1e1e1e;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  color: grey;
+}
+
+.workScreen .work .projectDescription .softs {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workScreen .work .projectDescription .softs img {
+  width: 20%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.workScreen .work .projectDescription .softs img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .contactScreen {
@@ -797,5 +918,749 @@ select:-webkit-autofill {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: grey;
+}
+
+@media (max-width: 768px) {
+  .barraDerecha {
+    height: 100vh;
+    width: 8vw;
+    background-color: #1e1e1e;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-left: solid 3px #282828;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 0px 50px #282828;
+            box-shadow: 0px 0px 50px #282828;
+  }
+  .barraDerecha .logoSec {
+    height: 15vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .barraDerecha .logoSec svg {
+    height: 40%;
+  }
+  .barraDerecha .logoSec svg #logo {
+    fill: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .barraDerecha .logoSec svg #logo:hover {
+    fill: rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    cursor: pointer;
+  }
+  .barraDerecha .marcadoresSec {
+    height: 70vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .barraDerecha .marcadoresSec .marcadores {
+    height: 60%;
+    width: 4px;
+    background-color: #232323;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .barraDerecha .marcadoresSec .marcadores .marcador {
+    height: 40px;
+    width: 6px;
+    background-color: #0E76A8;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+  .barraDerecha .marcadoresSec .marcadores .marcador:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-box-shadow: 0px 0px 30px 4px #0E76A8;
+            box-shadow: 0px 0px 30px 4px #0E76A8;
+  }
+  .barraDerecha .marcadoresSec .marcadores .active {
+    -webkit-box-shadow: 0px 0px 15px 4px #0E76A8;
+            box-shadow: 0px 0px 15px 4px #0E76A8;
+  }
+  .barraDerecha .counterSec {
+    height: 15vh;
+    width: 100%;
+  }
+  .barraDerecha .counterSec .counter {
+    line-height: 15vh;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #505050;
+  }
+  .barraIzqSup {
+    height: 10vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: solid 3px #282828;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 0px 50px #282828;
+            box-shadow: 0px 0px 50px #282828;
+  }
+  .barraIzqSup .line {
+    display: none;
+    height: 20%;
+    width: 1px;
+    background-color: #282828;
+  }
+  .barraIzqSup .logos {
+    width: 100vw;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .barraIzqSup .logos #btnsec1 {
+    height: 30px;
+    width: 30px;
+    display: block;
+  }
+  .barraIzqSup .logos #btnsec1 path {
+    -webkit-filter: hue-rotate(50deg);
+            filter: hue-rotate(50deg);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: invert(100%) opacity(0.1);
+            filter: invert(100%) opacity(0.1);
+  }
+  .barraIzqSup .logos a {
+    height: 30px;
+    width: 30px;
+  }
+  .barraIzqSup .logos img {
+    height: 30px;
+    width: 30px;
+    -webkit-filter: hue-rotate(50deg);
+            filter: hue-rotate(50deg);
+    margin-bottom: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: invert(100%) opacity(0.1);
+            filter: invert(100%) opacity(0.1);
+  }
+  .barraIzqSup .logos img:hover {
+    -webkit-transform: translateX(1vw);
+            transform: translateX(1vw);
+    -webkit-filter: invert(100%) opacity(0.5);
+            filter: invert(100%) opacity(0.5);
+  }
+  .homeScreen {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    padding: 15vh 5vw 2vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeScreen .mainContent {
+    height: 70%;
+    width: 80%;
+  }
+  .homeScreen .mainContent h1 {
+    color: #0E76A8;
+    font-size: 30px;
+  }
+  .homeScreen .mainContent .typing {
+    position: relative;
+  }
+  .homeScreen .mainContent .typing::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    margin-left: 5px;
+    border-right: solid 3px lightgrey;
+    -webkit-animation: blink 750ms infinite ease;
+            animation: blink 750ms infinite ease;
+  }
+  .homeScreen .mainContent h3 {
+    margin-top: 20px;
+    color: grey;
+    font-size: 15px;
+  }
+  .homeScreen .mainContent .cta {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    background-color: #0E76A8;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 0px 0px white;
+            box-shadow: 5px 5px 0px 0px white;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .homeScreen .mainContent .cta a {
+    color: white;
+    text-decoration: none;
+  }
+  .homeScreen .mainContent .cta:hover {
+    -webkit-transform: translatex(15px) translatey(15px);
+            transform: translatex(15px) translatey(15px);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(255, 255, 255, 0.8);
+            box-shadow: 15px 15px 0px 0px rgba(255, 255, 255, 0.8);
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .skillsScreen {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    position: relative;
+  }
+  .skillsScreen h1 {
+    position: absolute;
+    top: 12vh;
+    left: 6vw;
+    color: #0E76A8;
+    font-size: 30px;
+  }
+  .skillsScreen .skillsContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 15vh 10vw 2vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skillsScreen .skillsContent .parteA {
+    margin-top: 5vh;
+    height: 100%;
+    width: 90%;
+    color: grey;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .skillsScreen .skillsContent .parteB {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skillsScreen .skillsContent .parteB .container {
+    width: 75%;
+  }
+  .skillsScreen .skillsContent .parteB .container .card {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .skillsScreen .skillsContent .parteB .container .card .description {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    background-color: #414141;
+    opacity: 0%;
+    position: absolute;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skillsScreen .skillsContent .parteB .container .card .description:hover {
+    background-color: rgba(65, 65, 65, 0.75);
+    opacity: 100%;
+  }
+  .skillsScreen .skillsContent .parteB .container .card img {
+    width: 100%;
+  }
+  .workScreen {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    position: relative;
+  }
+  .workScreen h1 {
+    position: absolute;
+    top: 12vh;
+    left: 6vw;
+    color: #0E76A8;
+    font-size: 30px;
+  }
+  .workScreen .work {
+    height: 100vh;
+    width: 100vw;
+    padding: 15vh 10vw 2vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workScreen .work .projectThumbail {
+    height: 50%;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workScreen .work .projectThumbail img {
+    width: 90%;
+  }
+  .workScreen .work .projectDescription {
+    height: 50%;
+    width: 90%;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workScreen .work .projectDescription .description {
+    margin: 0px 0px 50px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workScreen .work .projectDescription .description p {
+    padding-right: 0px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #505050;
+  }
+  .workScreen .work .projectDescription .botonera {
+    margin: 0px 0px 50px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workScreen .work .projectDescription .botonera button {
+    width: 30%;
+    height: 40px;
+    border: solid 4px #0E76A8;
+    background-color: #282828;
+    color: #505050;
+    font-weight: bold;
+  }
+  .workScreen .work .projectDescription .botonera button:hover {
+    -webkit-box-shadow: 0px 0px 20px #0E76A8;
+            box-shadow: 0px 0px 20px #0E76A8;
+    background-color: #1e1e1e;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    color: grey;
+  }
+  .workScreen .work .projectDescription .softs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workScreen .work .projectDescription .softs img {
+    width: 20%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .workScreen .work .projectDescription .softs img:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .contactScreen {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    position: relative;
+  }
+  .contactScreen h1 {
+    position: absolute;
+    top: 12vh;
+    left: 6vw;
+    color: #0E76A8;
+    font-size: 30px;
+  }
+  .contactScreen .conteinerForm {
+    height: 100vh;
+    width: 100vw;
+    padding: 15vh 10vw 2vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer {
+    height: 75%;
+    width: 90%;
+    padding: 0px;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName {
+    height: 20%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector #name {
+    height: 100%;
+    width: 76%;
+    font-size: 15px;
+    background-color: #1e1e1e;
+    border: none;
+    border-bottom: solid 4px #0E76A8;
+    outline: none;
+    color: white;
+    padding-left: 20px;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector #name:focus {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck {
+    height: 100%;
+    width: 4%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px #0E76A8;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck .fa-check {
+    position: absolute;
+    color: #558016;
+    display: none;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck .visible {
+    display: block;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck .fa-times {
+    position: absolute;
+    color: #771126;
+    display: none;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameSector .nameCheck .visible {
+    display: block;
+  }
+  .contactScreen .conteinerForm .formContainer .containerName .nameErrorConteiner {
+    height: 50%;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    color: #c54e4e;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail {
+    height: 20%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector #mail {
+    height: 100%;
+    width: 76%;
+    font-size: 15px;
+    background-color: #1e1e1e;
+    border: none;
+    border-bottom: solid 4px #0E76A8;
+    outline: none;
+    color: white;
+    padding-left: 20px;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector #mail:focus {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck {
+    height: 100%;
+    width: 4%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px #0E76A8;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck .fa-check {
+    position: absolute;
+    color: #558016;
+    display: none;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck .visible {
+    display: block;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck .fa-times {
+    position: absolute;
+    color: #771126;
+    display: none;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailSector .mailCheck .visible {
+    display: block;
+  }
+  .contactScreen .conteinerForm .formContainer .containerMail .mailErrorConteiner {
+    height: 50%;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    color: #c54e4e;
+  }
+  .contactScreen .conteinerForm .formContainer .containerText {
+    margin-top: 2.5vh;
+    height: 40%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactScreen .conteinerForm .formContainer .containerText textarea {
+    height: 100%;
+    width: 80%;
+    font-size: 30px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: #232323;
+    color: white;
+  }
+  .contactScreen .conteinerForm .formContainer .containerText textarea:focus {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .contactScreen .conteinerForm .formContainer .containerButton {
+    height: 20%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3.5vh;
+  }
+  .contactScreen .conteinerForm .formContainer .containerButton button {
+    height: 50%;
+    width: 80%;
+    border: solid 4px #0E76A8;
+    background-color: #282828;
+    color: #505050;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .contactScreen .conteinerForm .formContainer .containerButton button:hover {
+    -webkit-box-shadow: 0px 0px 20px #0E76A8;
+            box-shadow: 0px 0px 20px #0E76A8;
+    background-color: #1e1e1e;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    color: grey;
+  }
 }
 /*# sourceMappingURL=style.css.map */

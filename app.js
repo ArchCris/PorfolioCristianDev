@@ -14,7 +14,7 @@ window.onload = () => {
 }
 
  //TYPING EFFECT//
- const texts = ["A Frontend Developer.", "An architect."]
+ const texts = ["A Frontend Dev.", "An Architect."]
  let count = 0;
  let index = 0;
  let currentText = "";
@@ -34,7 +34,7 @@ window.onload = () => {
      setTimeout(type, 300);
  }());
 
- //SUAVIZAR SCROLL//
+ //*SUAVIZAR SCROLL*//
  document.querySelectorAll('a[href^="#"]').forEach(elem => {
     elem.addEventListener('click', e => {
         e.preventDefault();
@@ -123,6 +123,13 @@ inputMail.addEventListener("blur", () => {
     
     console.log(submitStatus)
     mailErrorConteiner.innerHTML = errorMessage 
+})
+
+textarea.addEventListener("keypress", () => {
+    console.log("2")
+    if (textarea.value.length >= 1){
+        textarea.style.border = "solid 4px green"
+    }
 })
 
 btnSubmit.addEventListener("click", (e) => {
