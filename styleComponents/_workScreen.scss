@@ -8,7 +8,7 @@
         top: 5vh;
         left: 6vw;
         color: $textA;
-        font-size: 115px;
+        font-size: 100px;
     }
     .work{
         height: 100vh;
@@ -50,6 +50,7 @@
                 height: 5%;
                 width: 100%;
                 display: flex;
+                margin: 50px 0px 50px 0px;
                 justify-content: space-around;
                 align-items: center;
                 button{

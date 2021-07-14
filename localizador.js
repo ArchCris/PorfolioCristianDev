@@ -25,11 +25,13 @@ window.addEventListener("scroll", () => {
         m3.classList.remove("active")
         m4.classList.remove("active")
         counter.textContent = "1"
+        miniCris.style.opacity=100
     } else if (position >= homeScreen && position < lineB) {
         m1.classList.remove("active")
         m2.classList.add("active")
         m3.classList.remove("active")
         m4.classList.remove("active")
+        miniCris.style.opacity=0
         counter.textContent = "2"
     } else if (position >= lineB && position < lineC) {
         m1.classList.remove("active")
