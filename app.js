@@ -157,6 +157,17 @@ miniCris.addEventListener("mouseover", () => {
     miniCris.src = "Microme/hi.png"
     miniCris.style.filter="grayscale(0%)"
 })
+
+miniCris.addEventListener("click", () => {
+    miniCris.src = "Microme/hi.png"
+    miniCris.style.filter="grayscale(0%)"
+    setTimeout(() => {
+        miniCris.src = "Microme/stand.png"
+        miniCris.style.filter="grayscale(100%)"
+    }, 2000);
+})
+
+
 miniCris.addEventListener("mouseout", () => {
     miniCris.src = "Microme/stand.png"
     miniCris.style.filter="grayscale(100%)"
