@@ -10,7 +10,16 @@
     transition: all 2s ease;
     z-index: 1000;
     box-shadow: 0px 0px 50px $color3;
-    position: absolute;
+    #miniCris{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 12vh;
+        transform: translateX(-90%);
+        filter:grayscale(100%);
+        transition: all 750ms ease;
+        opacity: 0%;
+    }
     .logoSec{
         height: 15vh;
         width: 100%;
