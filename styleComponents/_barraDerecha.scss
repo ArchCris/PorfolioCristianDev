@@ -15,7 +15,7 @@
         position: absolute;
         right: 12vw;
         bottom: 12vh;
-        width: 40vh;
+        width: 35vh;
         filter:grayscale(100%);
         transition: all 750ms ease;
         opacity: 0%;
@@ -91,7 +91,7 @@
         .counter{
             line-height: 15vh;
             text-align: center;
-            font-size: 30px;
+            font-size: 1.5rem;
             font-weight: 400;
             color: $color4;
         }
