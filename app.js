@@ -153,25 +153,7 @@ setTimeout(() => {
     miniCris.style.opacity=100
 }, 2000);
 
-miniCris.addEventListener("mouseover", () => {
-    miniCris.src = "Microme/hi.png"
-    miniCris.style.filter="grayscale(0%)"
-})
 
-miniCris.addEventListener("click", () => {
-    miniCris.src = "Microme/hi.png"
-    miniCris.style.filter="grayscale(0%)"
-    setTimeout(() => {
-        miniCris.src = "Microme/stand.png"
-        miniCris.style.filter="grayscale(100%)"
-    }, 1200);
-})
-
-
-miniCris.addEventListener("mouseout", () => {
-    miniCris.src = "Microme/stand.png"
-    miniCris.style.filter="grayscale(100%)"
-})
 
 //MOUSE EFECT//
 const cursor = document.querySelector(".cursor")

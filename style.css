@@ -137,17 +137,50 @@ select:-webkit-autofill {
 }
 
 .barraDerecha #miniCris {
+  border-radius: 50%;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 15vh;
-  -webkit-transform: translateX(-90%);
-          transform: translateX(-90%);
+  right: 12vw;
+  bottom: 12vh;
+  width: 40vh;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all 750ms ease;
   transition: all 750ms ease;
   opacity: 0%;
+  -webkit-animation: floating 4s infinite;
+          animation: floating 4s infinite;
+  -webkit-box-shadow: 0px 0px 50px #0E76A8;
+          box-shadow: 0px 0px 50px #0E76A8;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .barraDerecha .logoSec {
@@ -606,7 +639,7 @@ select:-webkit-autofill {
 }
 
 .workScreen .work .projectDescription .botonera {
-  height: 5%;
+  height: 50px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,16 +652,19 @@ select:-webkit-autofill {
           align-items: center;
 }
 
-.workScreen .work .projectDescription .botonera button {
-  width: 30%;
-  height: 100%;
+.workScreen .work .projectDescription .botonera a {
+  width: 50%;
+  height: 50px;
   border: solid 4px #0E76A8;
   background-color: #282828;
   color: #505050;
   font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.workScreen .work .projectDescription .botonera button:hover {
+.workScreen .work .projectDescription .botonera a:hover {
   -webkit-box-shadow: 0px 0px 20px #0E76A8;
           box-shadow: 0px 0px 20px #0E76A8;
   background-color: #1e1e1e;
@@ -938,7 +974,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerButton button {
   height: 50%;
   width: 80%;
-  border: solid 4px #0E76A8;
+  border: none;
   background-color: #282828;
   color: #505050;
   font-weight: bold;
@@ -972,17 +1008,48 @@ select:-webkit-autofill {
             box-shadow: 0px 0px 50px #282828;
   }
   .barraDerecha #miniCris {
+    border-radius: 50%;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 12vh;
-    -webkit-transform: translateX(-90%);
-            transform: translateX(-90%);
+    right: 12vw;
+    bottom: 12vh;
+    width: 20vh;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
     -webkit-transition: all 750ms ease;
     transition: all 750ms ease;
     opacity: 0%;
+    -webkit-animation: floating 4s infinite;
+            animation: floating 4s infinite;
+    -webkit-box-shadow: 0px 0px 50px #0E76A8;
+            box-shadow: 0px 0px 50px #0E76A8;
+  }
+  @-webkit-keyframes floating {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes floating {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
   }
   .barraDerecha .logoSec {
     height: 15vh;
@@ -1151,16 +1218,16 @@ select:-webkit-autofill {
     min-height: 100vh;
     width: 100vw;
     background-color: #1e1e1e;
-    padding: 15vh 5vw 2vh 2vw;
+    padding: 25vh 5vw 2vh 2vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .homeScreen .mainContent {
     height: 70%;
@@ -1235,7 +1302,7 @@ select:-webkit-autofill {
     }
   }
   .skillsScreen {
-    min-height: 100vh;
+    min-height: auto;
     width: 100vw;
     background-color: #1e1e1e;
     position: relative;
@@ -1266,11 +1333,11 @@ select:-webkit-autofill {
             align-items: center;
   }
   .skillsScreen .skillsContent .parteA {
-    margin-top: 5vh;
+    margin-top: 11vh;
     height: 100%;
     width: 90%;
     color: grey;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
   }
   .skillsScreen .skillsContent .parteB {
@@ -1402,31 +1469,37 @@ select:-webkit-autofill {
             align-items: center;
   }
   .workScreen .work .projectDescription .description p {
+    padding-top: 5vh;
     padding-right: 0px;
     padding-left: 10px;
     font-size: 15px;
     color: #505050;
   }
   .workScreen .work .projectDescription .botonera {
-    margin: 0px 0px 50px 0px;
+    height: 50px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 50px 0px 50px 0px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .workScreen .work .projectDescription .botonera button {
-    width: 30%;
-    height: 40px;
+  .workScreen .work .projectDescription .botonera a {
+    width: 75%;
+    height: 50px;
     border: solid 4px #0E76A8;
     background-color: #282828;
     color: #505050;
     font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    text-decoration: none;
   }
-  .workScreen .work .projectDescription .botonera button:hover {
+  .workScreen .work .projectDescription .botonera a:hover {
     -webkit-box-shadow: 0px 0px 20px #0E76A8;
             box-shadow: 0px 0px 20px #0E76A8;
     background-color: #1e1e1e;
@@ -1702,7 +1775,7 @@ select:-webkit-autofill {
   .contactScreen .conteinerForm .formContainer .containerButton button {
     height: 50%;
     width: 80%;
-    border: solid 4px #0E76A8;
+    border: none;
     background-color: #282828;
     color: #505050;
     font-weight: bold;
@@ -1715,6 +1788,9 @@ select:-webkit-autofill {
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     color: grey;
+  }
+  .cursor {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

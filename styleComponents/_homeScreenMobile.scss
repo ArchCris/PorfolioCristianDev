@@ -2,10 +2,10 @@
     min-height: 100vh;
     width: 100vw;
     background-color: $color1;
-    padding: 15vh 5vw 2vh 2vw;
+    padding: 25vh 5vw 2vh 2vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     .mainContent{
         height: 70%;
         width: 80%;

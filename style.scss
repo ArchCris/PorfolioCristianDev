@@ -55,5 +55,8 @@ select:-webkit-autofill {
     @import "./styleComponents/skillsScreenMobile";
     @import "./styleComponents/workScreenMobile";
     @import "./styleComponents/contactScreenMobile";
+    .cursor{
+        display: none;
+    }
 }
 

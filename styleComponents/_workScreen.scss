@@ -51,21 +51,24 @@
                 }
             }
             .botonera{
-                height: 5%;
+                height: 50px;
                 width: 100%;
                 display: flex;
                 margin: 50px 0px 50px 0px;
                 justify-content: space-around;
                 align-items: center;
-                button{
-                    width: 30%;
-                    height: 100%;
+                a{
+                    width: 50%;
+                    height: 50px;
                     border: solid 4px $textA;
                     background-color: $color3;
                     color: $color4;
                     font-weight: bold;
+                    line-height: 42px;
+                    text-align: center;
+                    text-decoration: none;
                 }
-                button:hover{
+                a:hover{
                     box-shadow: 0px 0px 20px $textA;
                     background-color: $color1; 
                     transition: all 500ms ease;  

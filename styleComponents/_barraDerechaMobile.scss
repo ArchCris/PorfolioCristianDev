@@ -11,14 +11,28 @@
     z-index: 1000;
     box-shadow: 0px 0px 50px $color3;
     #miniCris{
+        border-radius: 50%;
         position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 12vh;
-        transform: translateX(-90%);
+        right: 12vw;
+        bottom: 12vh;
+        width: 20vh;
         filter:grayscale(100%);
         transition: all 750ms ease;
         opacity: 0%;
+        animation: floating 4s infinite; 
+        box-shadow: 0px 0px 50px $textA;
+    }
+
+    @keyframes floating {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(20px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
     }
     .logoSec{
         height: 15vh;
