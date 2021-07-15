@@ -360,9 +360,9 @@ select:-webkit-autofill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -375,7 +375,7 @@ select:-webkit-autofill {
 
 .homeScreen .mainContent h1 {
   color: #0E76A8;
-  font-size: 100px;
+  font-size: 6rem;
 }
 
 .homeScreen .mainContent .typing {
@@ -395,12 +395,12 @@ select:-webkit-autofill {
 .homeScreen .mainContent h3 {
   margin-top: 80px;
   color: grey;
-  font-size: 35px;
+  font-size: 1.75rem;
 }
 
 .homeScreen .mainContent .cta {
   margin-top: 80px;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   height: 80px;
   width: 350px;
@@ -462,7 +462,7 @@ select:-webkit-autofill {
   top: 5vh;
   left: 6vw;
   color: #0E76A8;
-  font-size: 100px;
+  font-size: 4rem;
 }
 
 .skillsScreen .skillsContent {
@@ -490,7 +490,7 @@ select:-webkit-autofill {
   width: 50%;
   padding: 2vw;
   color: grey;
-  font-size: 28px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -563,7 +563,7 @@ select:-webkit-autofill {
   top: 5vh;
   left: 6vw;
   color: #0E76A8;
-  font-size: 100px;
+  font-size: 4rem;
 }
 
 .workScreen h2 {
@@ -634,7 +634,7 @@ select:-webkit-autofill {
 .workScreen .work .projectDescription .description p {
   padding-right: 50px;
   padding-left: 50px;
-  font-size: 25px;
+  font-size: 1.2rem;
   color: #505050;
 }
 
@@ -711,7 +711,7 @@ select:-webkit-autofill {
   top: 5vh;
   left: 6vw;
   color: #0E76A8;
-  font-size: 100px;
+  font-size: 4rem;
 }
 
 .contactScreen .conteinerForm {
@@ -770,7 +770,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerName .nameSector #name {
   height: 100%;
   width: 76%;
-  font-size: 40px;
+  font-size: 1.75rem;
   background-color: #1e1e1e;
   border: none;
   border-bottom: solid 4px #0E76A8;
@@ -824,7 +824,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerName .nameErrorConteiner {
   height: 50%;
   width: 80%;
-  font-size: 30px;
+  font-size: 1.75rem;
   text-align: center;
   color: #c54e4e;
 }
@@ -864,7 +864,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerMail .mailSector #mail {
   height: 100%;
   width: 76%;
-  font-size: 40px;
+  font-size: 1.75rem;
   background-color: #1e1e1e;
   border: none;
   border-bottom: solid 4px #0E76A8;
@@ -918,7 +918,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerMail .mailErrorConteiner {
   height: 50%;
   width: 80%;
-  font-size: 30px;
+  font-size: 1.75rem;
   text-align: center;
   color: #c54e4e;
 }
@@ -941,7 +941,7 @@ select:-webkit-autofill {
 .contactScreen .conteinerForm .formContainer .containerText textarea {
   height: 100%;
   width: 80%;
-  font-size: 30px;
+  font-size: 1.75rem;
   padding: 10px;
   outline: none;
   border: none;
@@ -978,7 +978,7 @@ select:-webkit-autofill {
   background-color: #282828;
   color: #505050;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .contactScreen .conteinerForm .formContainer .containerButton button:hover {

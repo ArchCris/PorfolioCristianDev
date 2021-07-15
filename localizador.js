@@ -39,12 +39,14 @@ window.addEventListener("scroll", () => {
         m3.classList.add("active")
         m4.classList.remove("active")
         counter.textContent = "3"
+        miniCris.style.opacity=0
     } else if (position >= lineC) {
         m1.classList.remove("active")
         m2.classList.remove("active")
         m3.classList.remove("active")
         m4.classList.add("active")
         counter.textContent = "4"
+        miniCris.style.opacity=0
     }
 })
 
