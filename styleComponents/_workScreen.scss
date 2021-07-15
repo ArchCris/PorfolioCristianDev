@@ -10,6 +10,10 @@
         color: $textA;
         font-size: 100px;
     }
+    h2{
+        position: absolute;
+        color: $textB;
+    }
     .work{
         height: 100vh;
         width: 100vw;
@@ -75,7 +79,7 @@
                 justify-content: space-around;
                 align-items: center;
                 img{
-                    width: 20%;
+                    width: 15%;
                     filter: grayscale(100%);
                     transition: all 1s; 
                 }

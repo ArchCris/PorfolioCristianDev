@@ -146,7 +146,7 @@ btnSubmit.addEventListener("click", (e) => {
     }
 })
 
-//MINI CRIS EFECTO//
+//MINI CRIS EFECT//
 const miniCris = document.querySelector("#miniCris")
 
 setTimeout(() => {
@@ -164,7 +164,7 @@ miniCris.addEventListener("click", () => {
     setTimeout(() => {
         miniCris.src = "Microme/stand.png"
         miniCris.style.filter="grayscale(100%)"
-    }, 2000);
+    }, 1200);
 })
 
 
@@ -172,3 +172,13 @@ miniCris.addEventListener("mouseout", () => {
     miniCris.src = "Microme/stand.png"
     miniCris.style.filter="grayscale(100%)"
 })
+
+//MOUSE EFECT//
+const cursor = document.querySelector(".cursor")
+
+window.addEventListener("mousemove", cursorEffect)
+
+function cursorEffect(e) {
+    cursor.style.top=e.pageY+"px"
+    cursor.style.left=e.pageX+"px"
+}
